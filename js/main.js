@@ -5,7 +5,7 @@ recuperoDati.addEventListener('click',
 
     function(){
         const nomeDom = document.getElementById('nomeCognome');
-        const kilometriDom = document.getElementById('numeroKm');
+        const kilometriDom = parseInt(document.getElementById('numeroKm').value);
         const etaDom = document.getElementById('eta');
 
         
@@ -15,20 +15,23 @@ recuperoDati.addEventListener('click',
 
 
         let costoBiglietto = document.getElementById('costoBiglietto');
+
+        
         const tot = kilometriDom * 0.21;
         let totminori;
         let totover;
 
+
         if (etaDom < 18){
             totminori = ((tot - (tot * 20 / 100)));
-            costoBiglietto.innerHTML = totminori.value;
+            costoBiglietto.innerHTML = totminori.toFixed(2);
         
         } else if (etaDom > 65) {
             totover = ((tot - (tot * 40 / 100)));
-            costoBiglietto.innerHTML = totover.value;
+            costoBiglietto.innerHTML = totover.toFixed(2);
         
         } else{
-            costoBiglietto.innerHTML = tot.value;
+            costoBiglietto.innerHTML = tot.toFixed(2);
         }
 
 
