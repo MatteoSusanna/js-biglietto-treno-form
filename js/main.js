@@ -34,6 +34,11 @@ recuperoDati.addEventListener('click',
             costoBiglietto.innerHTML = tot.toFixed(2);
         }
 
+        let carrozzaDom = document.getElementById('carrozza');
+        carrozzaDom.innerHTML = Math.floor(Math.random() * 10) +1;
+
+        let codiceCpDom = document.getElementById('codiceCp');
+        codiceCpDom.innerHTML = Math.floor(Math.random() * 99999);
         
 
 
