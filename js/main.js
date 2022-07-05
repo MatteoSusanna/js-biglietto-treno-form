@@ -24,14 +24,14 @@ recuperoDati.addEventListener('click',
 
         if (etaDom < 18){
             totminori = ((tot - (tot * 20 / 100)));
-            costoBiglietto.innerHTML = totminori.toFixed(2);
+            costoBiglietto.innerHTML = totminori.toFixed(2) + ' €';
         
         } else if (etaDom > 65) {
             totover = ((tot - (tot * 40 / 100)));
-            costoBiglietto.innerHTML = totover.toFixed(2);
+            costoBiglietto.innerHTML = totover.toFixed(2) + ' €';
         
         } else{
-            costoBiglietto.innerHTML = tot.toFixed(2);
+            costoBiglietto.innerHTML = tot.toFixed(2) + ' €';
         }
 
         let carrozzaDom = document.getElementById('carrozza');
