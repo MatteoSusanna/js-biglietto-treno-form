@@ -34,6 +34,8 @@ recuperoDati.addEventListener('click',
             costoBiglietto.innerHTML = tot.toFixed(2);
         }
 
+        
+
 
     }
 );
