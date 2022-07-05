@@ -48,7 +48,12 @@ recuperoDati.addEventListener('click',
 );
 
 
+const annullaDati = document.getElementById('annulla');
 
 
-
+annullaDati.addEventListener('click',
+    function(){
+        document.querySelector('.container-bot1').classList.remove('d-block');
+}
+);
 
