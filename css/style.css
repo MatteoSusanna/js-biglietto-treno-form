@@ -5,11 +5,24 @@
 }
 
 body{
-    background-color: red;
+    background-color: #0f0e17;
+}
+
+h1{
+    text-align: center;
+    color: #ff8906;
 }
 
 .m-rl{
     margin: 1rem 2rem;
+}
+
+.p-b{
+    padding-bottom: 3rem;
+}
+
+.p-tb{
+    padding: 0.5rem 0;
 }
 
 .container-top{
@@ -32,11 +45,22 @@ body{
     align-items: center;
 }
 
+.container-bot1{
+    width: 60%;
+    margin: 1rem auto;
+    background-color: white;
+    padding: 20px;
+}
+
 .container-bot{
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    padding: 20px;
-    width: 60%;
-    margin: 3rem auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.box{
+    background-color: #f25f4c;
 }
