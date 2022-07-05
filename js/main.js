@@ -41,6 +41,8 @@ recuperoDati.addEventListener('click',
         codiceCpDom.innerHTML = Math.floor(Math.random() * 99999);
         
 
+ 
+        document.querySelector('.container-bot1').classList.add('d-block');
 
     }
 );
