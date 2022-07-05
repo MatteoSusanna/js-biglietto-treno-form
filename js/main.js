@@ -6,27 +6,29 @@ recuperoDati.addEventListener('click',
     function(){
         const nomeDom = document.getElementById('nomeCognome');
         const kilometriDom = document.getElementById('numeroKm');
+        const etaDom = document.getElementById('eta');
+
         
         const riportaNome = document.getElementById('nome_Cognome');
         riportaNome.innerHTML = nomeDom.value;
 
 
 
-        const costoBiglietto = document.getElementById('costoBiglietto')
+        let costoBiglietto = document.getElementById('costoBiglietto');
         const tot = kilometriDom * 0.21;
         let totminori;
         let totover;
 
-        if (eta < 18){
+        if (etaDom < 18){
             totminori = ((tot - (tot * 20 / 100)));
-            costoBiglietto.innerHTML = totminori.value
+            costoBiglietto.innerHTML = totminori.value;
         
-        } else if (eta > 65) {
+        } else if (etaDom > 65) {
             totover = ((tot - (tot * 40 / 100)));
-            costoBiglietto.innerHTML = totover.value
+            costoBiglietto.innerHTML = totover.value;
         
         } else{
-            costoBiglietto.innerHTML = tot
+            costoBiglietto.innerHTML = tot.value;
         }
 
 
