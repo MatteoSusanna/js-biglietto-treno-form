@@ -6,7 +6,7 @@ recuperoDati.addEventListener('click',
     function(){
         const nomeDom = document.getElementById('nomeCognome');
         const kilometriDom = parseInt(document.getElementById('numeroKm').value);
-        const etaDom = document.getElementById('eta');
+        const etaDom = document.getElementById('eta').value;
 
         
         const riportaNome = document.getElementById('nome_Cognome');
